@@ -10,15 +10,15 @@ menu:
   Categories:
     url: /categories
     icon: fas fa-bookmark
-  Archives:
-    url: /archives
-    icon: fas fa-archive
+  # Archives:
+  #   url: /archives
+  #   icon: fas fa-archive
   About:
     url: /about
     icon: fas fa-user-circle
-  Contact:
-    url: /contact
-    icon: fas fa-comments
+  # Contact:
+  #   url: /contact
+  #   icon: fas fa-comments
   # Friends:
   #   url: /friends
   #   icon: fas fa-address-book
@@ -217,7 +217,7 @@ myProjects:
     hexo-theme-matery:
       icon: fas fa-file-alt
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/blinkfox/hexo-theme-matery
+      url: http://github.com/alfredhua
       desc: This is a Hexo blog theme with 'Material Design' and responsive design.
     Fenix:
         icon: fas fa-database
@@ -349,7 +349,7 @@ changyan:
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
   enable: true
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/alfredhua
   title: Fork Me
 
 # The configuration of the Twikoo comment module is not activated by default.
@@ -584,7 +584,7 @@ jsDelivr:
   
 # 网站背景图
 background:
-  enable: false
+  enable: true
   url: "https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg"
 
 # 说说 https://artitalk.js.org/
