@@ -8,7 +8,7 @@ subtitle: '程序员阿华'
 description: ''
 keywords:
 author: 程序员阿华
-language: cn
+language: zh-CN
 timezone: ''
 
 # URL
@@ -103,3 +103,6 @@ theme: hexo-theme-matery
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+
+
