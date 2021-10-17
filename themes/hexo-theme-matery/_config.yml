@@ -43,9 +43,9 @@ menu:
 # 站点运行开始时间.
 time:
   enable: false
-  year: 2019 # 年份
-  month: 06 # 月份
-  date: 28 # 日期
+  year: 2021 # 年份
+  month: 10 # 月份
+  date: 10 # 日期
   hour: 00 # 小时
   minute: 00 # 分钟
   second: 00 # 秒
@@ -53,9 +53,9 @@ time:
 # Index cover carousel configuration.
 # 首页封面轮播图的相关配置.
 cover:
-  showPrevNext: true # 是否显示左右切换按钮. Whether to display the left and right toggle buttons.
-  showIndicators: true # 是否显示指示器. # Whether to display the indicators
-  autoLoop: true # 是否自动轮播. Whether it is automatically rotated.
+  showPrevNext: false # 是否显示左右切换按钮. Whether to display the left and right toggle buttons.
+  showIndicators: false # 是否显示指示器. # Whether to display the indicators
+  autoLoop: false # 是否自动轮播. Whether it is automatically rotated.
   duration: 120 # 切换延迟时间. Switching delay time.
   intervalTime: 5000 # 自动切换下一张的间隔时间. Automatically switch the interval of the next one.
   useConfig: false # 是否使用配置文件, 在 _data/covers.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg
@@ -64,11 +64,12 @@ cover:
 # index page dream text,
 # 配置首页显示"梦想"的语句.
 dream:
-  enable: false
-  showTitle: false
-  title: 梦想
-  text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+  enable: true
+  showTitle: true
+  title: 滴水穿石
+  text: 不积跬步，无以至千里；不积小流，无以成江海。——荀子
 
+ 
 # Whether to display the musics.
 # 是否在首页显示音乐.
 music:
@@ -77,17 +78,17 @@ music:
     enable: true
     show: 听听音乐
   autoHide: true    # hide automaticaly
-  server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
+  server: netease   # require	music platform: netease, tencent, kugou, xiami, baidu
   type: playlist    #require song, playlist, album, search, artist
   id: 503838841     #require	song id / playlist id / album id / search keyword
-  fixed: true       # 开启吸底模式
-  autoplay: false   # 是否自动播放
+  fixed: false       # 开启吸底模式
+  autoplay: true   # 是否自动播放
   theme: '#42b983'
   loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
   order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
   preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-  listFolded: true  # 列表默认折叠
+  listFolded: false  # 列表默认折叠
   hideLrc: true     # 隐藏歌词
 
 # Whether to display the videos.
@@ -110,7 +111,7 @@ video:
 # Whether to display the title of the recommended posts
 # 是否显示推荐文章的标题
 recommend:
-  enable: false
+  enable: true
   showTitle: true
   useConfig: false # 是否使用配置文件, 在 _data/recommends.json 下配置推荐文章, false则会走主题配置的 top 属性
   # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/recommends.json 移动到 my-blog/source/_data/下修改配置即可
@@ -164,7 +165,7 @@ reward:
   enable: true
   title: 你的赏识是我前进的动力
   wechat: /medias/reward/wechat.png
-  alipay: /medias/reward/alipay.jpg
+  alipay: /medias/reward/alipay.png
 
 # Whether to activate the copyright information of the blog and author when copying the post content.
 # minCharNumber: Approve copyright information by copying at least how many characters.
@@ -205,30 +206,30 @@ clicklove:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
-  career: Software Engineer
-  introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
-
+  career: 全栈工程师
+  introduction: 擅长后端，会点前端，喜欢电脑，爱玩工具，喜欢折腾的程序猿。
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
+
 myProjects:
   enable: true
   data:
-    hexo-theme-matery:
+    博客:
       icon: fas fa-file-alt
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/alfredhua
-      desc: This is a Hexo blog theme with 'Material Design' and responsive design.
-    Fenix:
+      url: https://github.com/alfredhua/project.git
+      desc: 本项目是一个基于Spring boot, Dubbo, Mybatis，MySQL，mybatis-migration的博客类，网站类系统
+    工具包:
         icon: fas fa-database
         iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-        url: https://github.com/blinkfox/fenix
-        desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
-    typora-vue-theme:
+        url: https://github.com/alfredhua/common-spring-boot-start
+        desc: 对各类工具进行封装。（限流，redis，es，邮件 等）
+    代码模板生成器:
         icon: fas fa-file-alt
         iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-        url: https://github.com/blinkfox/typora-vue-theme
-        desc: This is a typora theme inspired by Vue document style.
+        url: https://github.com/alfredhua/generator.git
+        desc: 代码模板生成器,生成JAVA代码,执行增删改查
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
@@ -238,7 +239,16 @@ mySkills:
   data:
     Java:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
-      percent: 85%
+      percent: 100%
+    Spring:
+      background: 'linear-gradient(to right, #2196F3 0%, #FF00CC 100%)'
+      percent: 100%
+    Mybatis:
+      background: 'linear-gradient(to right, #9900FF 0%, #FF00CC 100%)'
+      percent: 100%
+    SQL:
+      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
+      percent: 90%
     JavaScript:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
       percent: 80%
@@ -248,9 +258,6 @@ mySkills:
     CSS:
       background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
       percent: 70%
-    SQL:
-      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
-      percent: 90%
     程序设计:
       background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
       percent: 75%
@@ -376,9 +383,9 @@ verifyPassword:
 # busuanzi(http://busuanzi.ibruce.info/) website statistics
 # 不蒜子(http://busuanzi.ibruce.info/) 网站统计
 busuanziStatistics:
-  enable: true
-  totalTraffic: true # 总访问量
-  totalNumberOfvisitors: true # 总人次
+  enable: false
+  totalTraffic: false # 总访问量
+  totalNumberOfvisitors: false # 总人次
 
 # Add google analytics configuration
 # 添加 Google Analytics 配置
@@ -530,7 +537,7 @@ ribbon_dynamic:
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.
 sharejs:
   enable: true
-  sites: twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin
+  sites: wechat,weibo,douban
 
 # addthis文章分享模块.
 addthis:
@@ -547,8 +554,7 @@ subtitle:
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
   sub:
-    - 从来没有真正的绝境, 只有心灵的迷途
-    - Never really desperate, only the lost of the soul
+    - 天行健，君子以自强不息；地势坤，君子以厚德载物
 
 # 手机二级菜单.
 navMenu:
@@ -584,7 +590,7 @@ jsDelivr:
   
 # 网站背景图
 background:
-  enable: true
+  enable: false
   url: "https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg"
 
 # 说说 https://artitalk.js.org/

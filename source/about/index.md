@@ -1,4 +1,6 @@
 ---
 title: about
-date: 2021-10-14 15:37:22
+date: 2018-09-30 17:25:30
+type: "about"
+layout: "about"
 ---
