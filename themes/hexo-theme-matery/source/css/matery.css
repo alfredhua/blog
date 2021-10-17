@@ -241,7 +241,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #6DB5FC 0%, #3599FC 100%);
+    background-image: linear-gradient(to right, #C03EB7 0%, #7B2C76 100%);
 }
 
 .text-color {
@@ -1066,17 +1066,17 @@ article .article-tags .chip {
 
 #artDetail .tag_share .article-tag .chip:hover {
     color: #fff;
-    background: #42b983;
+    background: #7B2C76;
 }
 
 #artDetail .post-cate {
     float: right;
-    color: #42b983;
+    color: #7B2C76;
 }
 
 #artDetail .post-cate a {
     padding-right: 5px;
-    color: #42b983;
+    color: #7B2C76;
     font-weight: 500;
 }
 
@@ -1908,7 +1908,7 @@ p.search-result-summary{
 }
 
 .top-scroll .btn-floating {
-    background-image: linear-gradient(to right, #6DB5FC 0%, #3599FC 100%);
+    background-image: linear-gradient(to right, #C03EB7 0%, #7B2C76 100%);
     width: 48px;
     height: 48px;
 }
