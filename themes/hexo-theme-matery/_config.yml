@@ -568,13 +568,13 @@ instantpage:
 # banner 是否每日切换.
 # 若为 false, 则 banner 默认为 /medias/banner/0.jpg
 banner:
-  enable: true
+  enable: false
 
 #ICP备案信息尾部显示
 icp:
-  enable: false
-  url: # 备案链接
-  text: # 备案信息
+  enable: true
+  url: https://beian.miit.gov.cn/#/Integrated/index
+  text: CopyRight©2021 版权所有 ALFRED 京ICP备19044364号
 
 # CDN访问加速 
 # 第一次使用本功能，一定要先配置url，再`hexo cl && hexo g && hexo d`部署到GitHub的仓库，注意！必须是GitHub的仓库！
