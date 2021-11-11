@@ -929,10 +929,10 @@ public class Test {
 
 结果：
 
-    x:小李
-    y:小张
-    s1:小张
-    s2:小李
+x:小李
+y:小张
+s1:小张
+s2:小李
 
 总结
 Java程序设计语言对对象采用的不是引用调用，实际上，对象引用是按值传递的。
@@ -1200,7 +1200,7 @@ System. out. println(stringBuilder. reverse()); // gfedcba
 
 ## 数组有没有 length()方法？String 有没有 length()方法
 
-    数组没有 length()方法 ，有 length 的属性。String 有 length()方法。JavaScript中，获得字符串的长度是通过 length 属性得到的，这一点容易和 Java 混淆。
+数组没有 length()方法 ，有 length 的属性。String 有 length()方法。JavaScript中，获得字符串的长度是通过 length 属性得到的，这一点容易和 Java 混淆。
 
 ## String 类的常用方法都有那些？
 
@@ -1218,7 +1218,7 @@ System. out. println(stringBuilder. reverse()); // gfedcba
 
 ## 在使用 HashMap 的时候，用 String 做 key 有什么好处？
 
-    HashMap 内部实现是通过 key 的 hashcode 来确定 value 的存储位置，因为字符串是不可变的，所以当创建字符串时，它的 hashcode 被缓存下来，不需要再次计算，所以相比于其他对象更快。
+HashMap 内部实现是通过 key 的 hashcode 来确定 value 的存储位置，因为字符串是不可变的，所以当创建字符串时，它的 hashcode 被缓存下来，不需要再次计算，所以相比于其他对象更快。
 
 ## String和StringBuffer、StringBuilder的区别是什么？String为什么是不可变的
 可变性
