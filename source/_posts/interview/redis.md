@@ -1,3 +1,15 @@
+---
+title: redis
+date: 2021-11-21
+keywords: redis
+description: redis
+tags:
+  - redis
+  - 面试
+categories:
+  - redis
+---
+
 
 https://mp.weixin.qq.com/s/DHTPSfmWTZpdTmlytzLz1g
 
