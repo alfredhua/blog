@@ -1,3 +1,15 @@
+---
+title: RPC
+date: 2021-11-21
+keywords: RPC
+description: RPC
+tags:
+  - RPC
+  - 面试
+categories:
+  - RPC
+---
+
 ## IO模型
 
 BIO：线程发起IO请求，不管内核是否准备好IO操作，从发起请求起，线程一直阻塞，直到操作完成。如下图：
