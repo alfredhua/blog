@@ -1,3 +1,15 @@
+---
+title: JVM
+date: 2021-11-21
+keywords: JVM
+description: JVM
+tags:
+  - JVM
+  - 面试
+categories:
+  - JVM
+---
+
 ## 运行时数据区
 
 - 方法区：存储被加载的类信息、常量、静态变量。和堆一样不需要连续的内存，并且可以动态扩展，动态扩展失败一样会抛出 OutOfMemoryError 异常。

@@ -1,3 +1,17 @@
+---
+title: MySQL
+date: 2021-11-21
+keywords: MySQL
+description: MySQL
+tags:
+  - MySQL
+  - 面试
+categories:
+  - MySQL
+---
+
+
+
 ## MySQL的执行流程
 
 ![image](http://java-run-blog.oss-cn-zhangjiakou.aliyuncs.com/e4145214668c455c9742e1bd4d21d85a.png)
