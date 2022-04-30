@@ -266,21 +266,21 @@ super也有三种用法：
 
 1. 普通的直接引用
 
-> 与this类似，super相当于是指向当前对象的父类的引用，这样就可以用super.xxx来引用父类的成员。
+ 与this类似，super相当于是指向当前对象的父类的引用，这样就可以用super.xxx来引用父类的成员。
 
-2. 子类中的成员变量或方法与父类中的成员变量或方法同名时，用super进行区分
+. 子类中的成员变量或方法与父类中的成员变量或方法同名时，用super进行区分
 ```java
-class Person{
-    protected String name;
- 
-    public Person(String name) {
-        this.name = name;
-    }
- 
-}
- 
-class Student extends Person{
-    private String name;
+lass Person{
+   protected String name;
+
+   public Person(String name) {
+       this.name = name;
+   }
+
+
+
+lass Student extends Person{
+   private String name;
  
     public Student(String name, String name1) {
         super(name);
