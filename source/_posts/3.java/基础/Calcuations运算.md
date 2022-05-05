@@ -1,9 +1,13 @@
 ---
-title: 运算-码农阿华
-keywords: 运算，JAVA，基础
-description: java，运算，位，异或，逻辑与，
+title: Java运算
+date: 2022-05-03
+keywords: Java运算
+description: Java运算
+tags:
+  - JAVA基础
+categories:
+  - JAVA基础
 ---
-
 
 ```java
 

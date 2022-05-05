@@ -1,7 +1,12 @@
 ---
-title: integer-码农阿华
-keywords: integer，JAVA，基础
-description: Integer对象，Integer
+title: Integer详解
+date: 2022-05-03
+keywords: Integer
+description: Integer
+tags:
+  - JAVA基础
+categories:
+  - JAVA基础
 ---
 
 将 Integer对象i和j进行互换：
