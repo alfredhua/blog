@@ -12,9 +12,9 @@ categories:
 
 ## 什么是 Spring 框架
 
-​	Spring 官网：https://spring.io/。
+Spring 官网：https://spring.io/。
 
-​	它是很多模块的集合，使用这些模块可以很方便地协助我们进行开发。这些模块是：核心容器、数据访问/集成,、Web、AOP（面向切面编程）、工具、消息和测试模块。比如：Core Container 中的 Core 组件是Spring 所有组件的核心，Beans 组件和 Context 组件是实现IOC和依赖注入的基础，AOP组件用来实现面向切面编程。
+它是很多模块的集合，使用这些模块可以很方便地协助我们进行开发。这些模块是：核心容器、数据访问/集成,、Web、AOP（面向切面编程）、工具、消息和测试模块。比如：Core Container 中的 Core 组件是Spring 所有组件的核心，Beans 组件和 Context 组件是实现IOC和依赖注入的基础，AOP组件用来实现面向切面编程。
 
 - **核心技术** ：依赖注入(DI)，AOP，事件(events)，资源，i18n，验证，数据绑定，类型转换，SpEL。
 - **测试** ：模拟对象，TestContext框架，Spring MVC 测试，WebTestClient。
@@ -45,9 +45,9 @@ categories:
 
 ## @RestController vs @Controller
 
-​	单独使用 `@Controller` 不加 `@ResponseBody`的话一般使用在要返回一个视图的情况，这种情况属于比较传统的Spring MVC 的应用，对应于前后端不分离的情况。
+单独使用 `@Controller` 不加 `@ResponseBody`的话一般使用在要返回一个视图的情况，这种情况属于比较传统的Spring MVC 的应用，对应于前后端不分离的情况。
 
- 	@RestController =@Controller +@ResponseBody
+@RestController =@Controller +@ResponseBody
 
 ## 谈谈自己对于 Spring IoC 和 AOP 的理解
 
@@ -65,11 +65,11 @@ AOP(Aspect-Oriented Programming:面向切面编程)能够将那些与业务无�
 
 ## Spring AOP 和 AspectJ AOP 有什么区别？
 
-​	Spring AOP 属于运行时增强，而 AspectJ 是编译时增强。Spring AOP 基于代理(Proxying)，而 AspectJ 基于字节码操作(Bytecode Manipulation)。
+Spring AOP 属于运行时增强，而 AspectJ 是编译时增强。Spring AOP 基于代理(Proxying)，而 AspectJ 基于字节码操作(Bytecode Manipulation)。
 
-​	Spring AOP 已经集成了 AspectJ ，AspectJ 应该算的上是 Java 生态系统中最完整的 AOP 框架了。AspectJ 相比于 Spring AOP 功能更加强大，但是 Spring AOP 相对来说更简单，
+Spring AOP 已经集成了 AspectJ ，AspectJ 应该算的上是 Java 生态系统中最完整的 AOP 框架了。AspectJ 相比于 Spring AOP 功能更加强大，但是 Spring AOP 相对来说更简单，
 
-​	如果我们的切面比较少，那么两者性能差异不大。但是，当切面太多的话，最好选择 AspectJ ，它比Spring AOP 快很多。
+如果我们的切面比较少，那么两者性能差异不大。但是，当切面太多的话，最好选择 AspectJ ，它比Spring AOP 快很多。
 
 ## Filter和拦截器区别
 
@@ -82,7 +82,7 @@ AOP(Aspect-Oriented Programming:面向切面编程)能够将那些与业务无�
 
 ### 拦截器：
 
-- ***\*拦截器拦截以 .action结尾的url，拦截Action的访问\****。 Interfactor是基于**Java的反射机制**（APO思想）进行实现，不依赖Servlet容器。
+- **拦截器拦截以 .action结尾的url，拦截Action的访问**。 Interfactor是基于**Java的反射机制**（APO思想）进行实现，不依赖Servlet容器。
 - **拦截器可以在方法执行之前(preHandle)和方法执行之后(afterCompletion)进行操作，回调操作(postHandle)**，***\*可以获取执行的方法的名称\****，请求(HttpServletRequest)
 - Interceptor：**可以控制请求的控制器和方法**，但**控制不了请求方法里的参数(\**只能获取参数的名称，不能获取到参数的值\**)**
 - **（**用于处理页面提交的请求响应并进行处理，例如做国际化，做主题更换，过滤等）。
@@ -99,13 +99,13 @@ AOP(Aspect-Oriented Programming:面向切面编程)能够将那些与业务无�
 
 ## Spring中的Bean是线程安全的嘛？
 
-​	对于单例Bean,所有线程都共享一个单例实例Bean,因此是存在资源的竞争。
+对于单例Bean,所有线程都共享一个单例实例Bean,因此是存在资源的竞争。
 
-​	如果单例Bean,是一个无状态Bean，也就是线程中的操作不会对Bean的成员执行查询以外的操作，那么这个单例Bean是线程安全的。比如Spring mvc 的 Controller、Service、Dao等，这些Bean大多是无状态的，只关注于方法本身。
+如果单例Bean,是一个无状态Bean，也就是线程中的操作不会对Bean的成员执行查询以外的操作，那么这个单例Bean是线程安全的。比如Spring mvc 的 Controller、Service、Dao等，这些Bean大多是无状态的，只关注于方法本身。
 
-​	对于有状态的bean，Spring官方提供的bean，一般提供了通过ThreadLocal去解决线程安全的方法，比如RequestContextHolder、TransactionSynchronizationManager、LocaleContextHolder等。	
+对于有状态的bean，Spring官方提供的bean，一般提供了通过ThreadLocal去解决线程安全的方法，比如RequestContextHolder、TransactionSynchronizationManager、LocaleContextHolder等。	
 
-​	容器本身并没有提供Bean的线程安全策略，因此可以说**Spring容器中的Bean本身不具备线程安全的特性**。**因此是否线程安全完全取决于Bean本身的特性。**
+容器本身并没有提供Bean的线程安全策略，因此可以说**Spring容器中的Bean本身不具备线程安全的特性**。**因此是否线程安全完全取决于Bean本身的特性。**
 
 ## @Component 和 @Bean 的区别是什么？
 
